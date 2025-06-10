@@ -3,5 +3,5 @@
 
 
 #
-This site only provides responses from the viaCEP API
+
 
