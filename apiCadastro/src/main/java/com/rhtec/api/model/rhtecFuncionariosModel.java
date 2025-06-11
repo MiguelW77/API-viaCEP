@@ -1,9 +1,12 @@
 package com.rhtec.api.model;
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,26 +20,29 @@ import lombok.Setter;
 public class rhtecFuncionariosModel {
     @Id
     @GeneratedValue(strategy =GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 
     @Column(nullable=false)
-    String Nome;
+    private String Nome;
     @Column(nullable=false,unique=true)
-    String email;
+    private String email;
     @Column(nullable=false)
-    String Senha;
+    private String Senha;
     @Column(nullable=false , length=8)
-    String CEP;
+    private String CEP;
     @Column(nullable=false)
-    String endereco;
+    private String endereco;
     @Column(nullable=false)
-    String numero;
+    private String numero;
     @Column(nullable=false)
-    String Bairro;
+    private String Bairro;
     @Column(nullable=false)
-    String Cidade;
+    private String Cidade;
     @Column(nullable = false)
-    String Estado;
+    private String Estado;
+
+     @OneToMany(mappedBy = "funcionarioKey")
+    private List<rhtecFuncionariosCargosModel> cargoFuncionarios;
 
 
 
