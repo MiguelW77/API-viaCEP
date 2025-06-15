@@ -1,12 +1,3 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic",
-    "java.debug.settings.onBuildFailureProceed": true,
-    "java.configuration.maven.userSettings": "C:/Users/pc/.m2/settings.xml",
-    "maven.executable.path": "C:/Users/pc/Desktop/projects/apache-maven-3.9.10/bin/mvn.cmd",
-    "java.jdt.ls.java.home": "C:/Users/pc/Desktop/projects/OpenJDK-24",
-    "cSpell.words": [
-        "springframework"
-    ],
-    
-
+    "java.compile.nullAnalysis.mode": "automatic"
 }
