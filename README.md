@@ -1,5 +1,5 @@
 ## 🌐 Acess the website 
-👉 [Click on her](https://miguelw77.github.io/CadasterLogin/)
+👉 [Click on her](https://miguelw77.github.io/RhTec/)
 
 
 #
