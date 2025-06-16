@@ -46,7 +46,7 @@ public class rhtecFuncionariosCargosController {
         }
         }
 
-    @GetMapping("/{id}")
+    @GetMapping("{/id}")
         public ResponseEntity<rhtecFuncionariosCargosModel> getID(@PathVariable int id){
         Optional<rhtecFuncionariosCargosModel> vinculo = service.findById(id);
         return vinculo.map(ResponseEntity :: ok).orElseGet(() -> ResponseEntity.notFound().build());
@@ -63,7 +63,7 @@ public class rhtecFuncionariosCargosController {
         return ResponseEntity.ok(vinculoAtualizado);
             
         }
-    @DeleteMapping("/{id}")
+    @DeleteMapping("{/id}")
         public ResponseEntity<Void> deletar(@PathVariable int id){
         Optional<rhtecFuncionariosCargosModel> vinculoExistente = service.findById(id);
         if(vinculoExistente.isEmpty()){
